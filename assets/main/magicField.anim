@@ -1,0 +1,1 @@
+{"__type__":"cc.AnimationClip","_name":"magicField","_duration":3,"sample":30,"wrapMode":2,"curveData":{"paths":{},"props":{"width":[{"frame":0,"value":0},{"frame":3,"value":192}],"height":[{"frame":0,"value":0},{"frame":3,"value":192}],"opacity":[{"frame":0,"value":0},{"frame":0.8333333333333334,"value":127},{"frame":2,"value":255},{"frame":3,"value":0}]}}}

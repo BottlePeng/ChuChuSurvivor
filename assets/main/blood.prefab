@@ -1,0 +1,91 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "blood",
+    "root": {
+      "__id__": 1
+    },
+    "icon": {
+      "__id__": 2
+    },
+    "node": {
+      "__id__": 1
+    },
+    "data": {
+      "__id__": 1
+    },
+    "persistent": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "blood",
+    "_groupIndex": 3,
+    "groupIndex": 3,
+    "_components": [
+      {
+        "__id__": 2
+      },
+      {
+        "__type__": "5bdd8VvU1NMo4VTTBL+Bt2H",
+        "node": {
+          "__id__": 1
+        },
+        "icon": {
+          "__id__": 2
+        },
+        "frameArr": [
+          {
+            "__uuid__": "941f80ee-7f46-425c-b019-e2e1a59c3f7d"
+          },
+          {
+            "__uuid__": "b4ce941d-4911-4c9b-b4ad-180b58866a76"
+          },
+          {
+            "__uuid__": "020e4fbd-44ff-4c65-9aa1-80962271a2b5"
+          }
+        ]
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__id__": 0
+      }
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 192,
+      "height": 192
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0.65,
+        0.65,
+        1
+      ]
+    }
+  },
+  {
+    "__type__": "cc.Sprite",
+    "node": {
+      "__id__": 1
+    },
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ]
+  }
+]

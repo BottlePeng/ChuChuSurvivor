@@ -1,0 +1,73 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "rifleStreak",
+    "root": {
+      "__id__": 1
+    },
+    "node": {
+      "__id__": 1
+    },
+    "data": {
+      "__id__": 1
+    },
+    "persistent": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "rifleStreak",
+    "_groupIndex": 4,
+    "groupIndex": 4,
+    "_components": [
+      {
+        "__type__": "cc.MotionStreak",
+        "_fadeTime": 0.2,
+        "_minSeg": 0.2,
+        "_stroke": 11,
+        "_fastMode": true,
+        "node": {
+          "__id__": 1
+        },
+        "_materials": [
+          {
+            "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+          }
+        ],
+        "_texture": {
+          "__uuid__": "89edcd05-212c-42d3-a67b-0ccd43bc0acf"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__id__": 0
+      }
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        1.028,
+        0,
+        0,
+        0,
+        1,
+        6.123233995736766e-17,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 180
+    }
+  }
+]

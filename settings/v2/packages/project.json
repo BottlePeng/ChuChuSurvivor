@@ -1,3 +1,78 @@
 {
-  "__version__": "1.0.6"
+  "__version__": "1.0.6",
+  "general": {
+    "designResolution": {
+      "width": 720,
+      "height": 1280,
+      "fitHeight": false,
+      "fitWidth": true
+    }
+  },
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "UI"
+      },
+      {
+        "index": 2,
+        "name": "Game"
+      },
+      {
+        "index": 3,
+        "name": "BG"
+      },
+      {
+        "index": 4,
+        "name": "Role"
+      },
+      {
+        "index": 5,
+        "name": "Bullet"
+      },
+      {
+        "index": 6,
+        "name": "Exp"
+      },
+      {
+        "index": 7,
+        "name": "Hp"
+      },
+      {
+        "index": 8,
+        "name": "ItemLayer"
+      },
+      {
+        "index": 9,
+        "name": "EnemyBullet"
+      },
+      {
+        "index": 10,
+        "name": "FlyEnemy"
+      },
+      {
+        "index": 11,
+        "name": "BulletPunch"
+      },
+      {
+        "index": 12,
+        "name": "GuideLayer"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 0,
+      "1": 0,
+      "2": 2340,
+      "3": 0,
+      "4": 256,
+      "5": 1284,
+      "6": 0,
+      "7": 0,
+      "8": 2100,
+      "9": 0,
+      "10": 32,
+      "11": 260,
+      "12": 0
+    }
+  }
 }

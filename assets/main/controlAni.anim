@@ -1,0 +1,1 @@
+{"__type__":"cc.AnimationClip","_name":"controlAni","_duration":0.3,"sample":30,"speed":0.3,"wrapMode":2,"curveData":{"props":{"x":[{"frame":0.1,"value":40},{"frame":0.26666666666666666,"value":193.47}],"opacity":[{"frame":0,"value":0},{"frame":0.1,"value":255},{"frame":0.2,"value":255},{"frame":0.3,"value":0}]}}}
