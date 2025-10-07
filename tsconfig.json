@@ -1,0 +1,12 @@
+{
+  /* Base configuration. Do not edit this field. */
+  "extends": "./temp/tsconfig.cocos.json",
+  
+  "compilerOptions": {
+    "types": [
+      "jquery"
+    ],
+    // 关闭严格模式
+    "strict": false
+  },
+}

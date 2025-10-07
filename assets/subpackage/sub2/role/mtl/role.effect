@@ -1,0 +1,79 @@
+CCEffect %{
+  techniques:
+  - name: opaque
+    passes:
+    - vert: vs:vert
+      frag: fs:frag
+      depthStencilState:
+        depthTest: false
+        depthWrite: false
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendSrcAlpha: src_alpha
+          blendDst: one_minus_src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      rasterizerState:
+        cullMode: none
+}%
+
+CCProgram vs %{
+  precision highp float;
+  #include <cc-global>
+
+  in vec4 a_position;
+  in vec2 a_texCoord;
+  in vec4 a_color;
+
+  out vec2 v_texCoord;
+  out vec4 v_color;
+
+  vec4 vert() {
+    vec4 pos = cc_matViewProj * a_position;
+    v_texCoord = a_texCoord;
+
+    v_color = a_color;
+    return pos;
+  }
+}%
+
+
+CCProgram fs %{
+  precision highp float;
+
+  in vec4 v_color;
+
+  in vec2 v_texCoord;
+  #pragma builtin(local)
+  layout(set = 2, binding = 12) uniform sampler2D cc_spriteTexture;
+
+  vec4 frag() {
+    // 获取纹理像素颜色
+    vec4 o =  vec4(1, 1, 1, 1);
+    o *= texture(cc_spriteTexture, v_texCoord);
+
+    vec4 white = vec4(1, 1, 1, 1);
+    float vcolorA = v_color.a;
+
+    //闪白 1为原色 color.a = 255 * 1
+    if (v_color.g == 1.0 && abs(vcolorA) > 0.01) {
+      o.rgb = o.rgb * (1.0 - vcolorA) + white.rgb * vcolorA;
+    }
+
+    //消融 color.g = 55 + (254 - 55 * 1)
+    if (v_color.g != 1.0) {
+      //改为step方式
+      float disFactor = 1.0;
+      disFactor *= step(o.b, v_color.g) * step(o.r, v_color.g) * step(o.g, v_color.g);
+      if (disFactor == 1.0) {
+        discard;
+      }
+      disFactor = 1.0;
+      disFactor *= step(v_color.g, 0.2) * step(o.b,v_color.g + 0.2);
+      o.rgb = mix(o.rgb, vec3(0.2, 0.6, 0.2), disFactor);
+    }
+
+    return o;
+  }
+}%

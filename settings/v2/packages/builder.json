@@ -1,0 +1,107 @@
+{
+  "__version__": "1.3.9",
+  "bundleConfig": {
+    "custom": {
+      "e4hWvPBvdO6K3uzvn+3UN9": {
+        "displayName": "远程",
+        "configs": {
+          "native": {
+            "preferredOptions": {
+              "isRemote": true,
+              "compressionType": "merge_all_json"
+            }
+          },
+          "web": {
+            "preferredOptions": {
+              "isRemote": true,
+              "compressionType": "merge_all_json"
+            },
+            "fallbackOptions": {
+              "compressionType": "merge_dep"
+            }
+          },
+          "miniGame": {
+            "fallbackOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "configMode": "fallback"
+          }
+        }
+      },
+      "e9DeWh1ZRFN5+Kl10fbyht": {
+        "displayName": "小游戏分包",
+        "configs": {
+          "native": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            }
+          },
+          "web": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "fallbackOptions": {
+              "compressionType": "merge_dep"
+            }
+          },
+          "miniGame": {
+            "fallbackOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "configMode": "overwrite",
+            "overwriteSettings": {
+              "wechatgame": {
+                "compressionType": "subpackage"
+              },
+              "bytedance-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "alipay-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "huawei-quick-game": {
+                "compressionType": "subpackage"
+              },
+              "migu-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "oppo-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "taobao-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "vivo-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "xiaomi-quick-game": {
+                "compressionType": "subpackage"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "splash-setting": {
+    "background": {
+      "image": "project://settings/bg_full.png",
+      "type": "color",
+      "color": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      }
+    },
+    "logo": {
+      "image": "project://settings/logo_en.png",
+      "type": "custom"
+    },
+    "displayRatio": 0.5
+  }
+}

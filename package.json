@@ -1,0 +1,14 @@
+{
+  "name": "楚楚幸存者",
+  "uuid": "77678105-3518-4512-8176-b1f2202e363e",
+  "creator": {
+    "version": "3.8.7"
+  },
+  "_sourceId": "22950e84-762c-4789-9cd8-081f11c48294",
+  "_storeId": "7699378013cdad59dedad3901b5c5bb4",
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/jquery": "^3.5.33"
+  },
+  "description": ""
+}
