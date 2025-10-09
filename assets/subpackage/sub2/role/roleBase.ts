@@ -47,11 +47,12 @@ export class roleBase extends ccBase {
 
         this.resetAnim()
 
+        // 生成血条
         const createProgressBar = (group) => {
             let progressBarNode = this.find('roleProgressBar')
             if (!progressBarNode) progressBarNode = H.inst(G('asset').getPrefab('roleProgressBar'), this.node)
             progressBarNode.active = true
-            progressBarNode.y = this.node.sizeH
+            progressBarNode.y = this.node.sizeH + 50 // 血条位置
             H.forArr(this.find('HP', progressBarNode).children, node => {
                 if (group == 'player') {
                     node.sprite.color = cc.color('#00FF00')

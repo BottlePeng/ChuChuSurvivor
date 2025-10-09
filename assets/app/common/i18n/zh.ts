@@ -4,9 +4,9 @@ const { ccclass } = _decorator;
 @ccclass('zh')
 export class zh {
     data = {
-        app_name: '魔法兄弟',
-        ios_app_name: '魔法兄弟',
-        android_app_name: '魔兽兄弟',
+        app_name: '楚楚幸存者',
+        ios_app_name: '楚楚幸存者',
+        android_app_name: '楚楚幸存者',
 
         error_action: '操作失败',
         error_chip: '碎片不足',

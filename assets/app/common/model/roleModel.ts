@@ -10,13 +10,14 @@ export class roleModel {
         SET_CHIP: 'roleModel.setChip#asset',
     }
 
+    // 玩家角色数据
     createPlayerData(asset) {
         let selectRoleData = M('data').roles.filter(a => {
             return a.asset == asset
         })[0]
         let res = {}
-        res.HP = 100 + (selectRoleData.HPLevel * 5)
-        res.ATK = 10 + selectRoleData.ATKLevel
+        res.HP = 10 + (selectRoleData.HPLevel * 5) // 血量 基础10 每级+5
+        res.ATK = 10 + selectRoleData.ATKLevel // 攻击 基础10 每级+2
         for (let key in M('data').skill) {
             res[key] = M('data').skill[key]
         }
